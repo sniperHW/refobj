@@ -5,6 +5,7 @@
 
 void destructor(void *obj) {
 	printf("destructor\n");
+	free(obj);
 }
 
 int main() {

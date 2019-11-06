@@ -93,6 +93,7 @@ refobj *cast2refobj(ident _ident) {
             }    
         }
     } CATCH {
+        printf("segv\n");
         ptr = NULL;      
     }ENDTRY;
     return ptr; 
