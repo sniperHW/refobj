@@ -51,10 +51,6 @@ void refobj_init(refobj *r,void (*destructor)(void*));
 
 refobj *cast2refobj(ident _ident);
 
-static inline uint32_t refobj_inc(refobj *r) {
-    return ATOMIC_INCREASE(&r->refcount);
-}
-
 static inline ident make_ident(refobj *ptr) {
     return (ident){.identity=ptr->identity,.ptr=ptr};
 }

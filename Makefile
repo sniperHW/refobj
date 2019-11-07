@@ -1,2 +1,2 @@
 all:
-	gcc -g -o test -D_MACH test.c refobj.c
+	gcc -O3 -o test -D_MACH test.c refobj.c
